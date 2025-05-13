@@ -17,7 +17,8 @@ body {
   
   /* Page containers */
   #welcome-page,
-  #seed-page {
+  #seed-page,
+  #session-page {
     max-width: 800px;
     margin: 0 auto;
   }
@@ -32,18 +33,56 @@ body {
     padding: 20px;
     border-radius: 20px;  
   }
-
-  .plant-row:nth-of-type(1) {
-    display: flex;
-    align-items: center;
-    width: 60%;
-  }
   
   .plant-img {
-    width:90px !important;
+    width:100px !important;
+    height:auto !important;
+    border-radius: 20%;
+    margin: 0 40px;   
+    cursor: pointer;  
+  }
+
+  .plant-option {
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid;
+    border-color:rgb(105, 101, 101);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .plant-option:hover {
+    border-color: rgb(162, 232, 232);
+  }
+
+  .session-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    justify-content: center !important;
+    padding: 20px;
+    border-radius: 20px;  
+  }
+
+  .session-option {
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid;
+    border-color:rgb(105, 101, 101);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .session-img {
+    width:200px !important;
     height:auto !important;
     border-radius: 20%;
     margin: 0 40px;   
     cursor: pointer;  
   }
   
+  .session-option:hover {
+    border-color: rgb(162, 232, 232);
+  }

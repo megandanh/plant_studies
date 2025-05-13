@@ -11,22 +11,71 @@
             <h1>The Plant Study Hall</h1>
             <button id="welcome-button">Study!</button>
         </div>
+
         <div id="seed-page" style="text-align: center;" hidden="true">
             <h1>Select a plant to grow!</h1>
             <div class="plant-menu">
-                <div class="plant-row" style="text-align: center;">
+                <div class="plant-option" id="lemon-tree-opt"> 
                     <img class="plant-img" src="img/filler.jpg">
-                    <img class="plant-img" src="img/filler.jpg">
-                    <img class="plant-img" src="img/filler.jpg">
+                    <h2>Lemon Tree</h2>
                 </div>
-                <div class="plant-row" style="text-align: center;">
+                <div class="plant-option" id="sunflower-opt">
                     <img class="plant-img" src="img/filler.jpg">
-                    <img class="plant-img" src="img/filler.jpg">
-                    <img class="plant-img" src="img/filler.jpg">
+                    <h2>Sunflower</h2>
                 </div>
+                <div class="plant-option" id="tulip-opt">
+                    <img class="plant-img" src="img/filler.jpg">
+                    <h2>Tulip</h2>
+                </div>            
             </div>
+            <div class="plant-menu">
+                <div class="plant-option" id="venus-flytrap-opt">
+                    <img class="plant-img" src="img/filler.jpg">
+                    <h2>Venus Flytrap</h2>
+                </div>
+                <div class="plant-option" id="strawberry-bush-opt">
+                    <img class="plant-img" src="img/filler.jpg">
+                    <h2>Strawberry Bush</h2>
+                </div>
+                <div class="plant-option" id="tomato-vine-opt">
+                    <img class="plant-img" src="img/filler.jpg">
+                    <h2>Tomato Vine</h2>
+                </div>   
+            </div>
+            <button id="seed-button">Select</button>
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div id="session-page" style="text-align: center;" hidden="true">
+            <h1>Would you like to divide your sessions by tasks or time?</h1>
+            <div class="session-style">
+                <div class="session-option" id="task-opt">
+                    <img class="session-img" src="img/filler.jpg">
+                    <h2>Tasks</h2>
+                </div>
+                <div class="session-option" id="timer-opt">
+                    <img class="session-img" src="img/filler.jpg">
+                    <h2>Time</h2>
+                </div>
+            </div>
+            <button id="session-button">Select</button>
+        </div>
+
+        <div id="task-number" style="text-align: center;" hidden="true">
+            <h1>How many tasks do you have? (Maximum 10)</h1>
+            <div class="session-style">
+                <div class="session-option" id="task-opt">
+                    <img class="session-img" src="img/filler.jpg">
+                    <h2>Tasks</h2>
+                </div>
+                <div class="session-option" id="timer-opt">
+                    <img class="session-img" src="img/filler.jpg">
+                    <h2>Time</h2>
+                </div>
+            </div>
+            <button id="session-button">Select</button>
+        </div>
+
+        <script type="module" src="js/welcome.js"></script>
+        <script type="module" src="js/seed.js"></script>
+        <script type="module" src="js/session.js"></script>    </body>
 </html>
