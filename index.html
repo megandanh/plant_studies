@@ -3,15 +3,17 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title>The Plant Study Hall</title>
-        
+
     </head>
     
     <body>
+        <!-- Welcome Page -->
         <div id="welcome-page" style="text-align: center;">
             <h1>The Plant Study Hall</h1>
             <button id="welcome-button">Study!</button>
         </div>
 
+        <!-- Seed Selection Page -->
         <div id="seed-page" style="text-align: center;" hidden="true">
             <h1>Select a plant to grow!</h1>
             <div class="plant-menu">
@@ -28,6 +30,7 @@
                     <h2>Tulip</h2>
                 </div>            
             </div>
+
             <div class="plant-menu">
                 <div class="plant-option" id="venus-flytrap-opt">
                     <img class="plant-img" src="img/filler.jpg">
@@ -45,6 +48,7 @@
             <button id="seed-button">Select</button>
         </div>
 
+        <!-- Session Type Selection Page -->
         <div id="session-page" style="text-align: center;" hidden="true">
             <h1>Would you like to divide your sessions by tasks or time?</h1>
             <div class="session-style">
@@ -60,22 +64,25 @@
             <button id="session-button">Select</button>
         </div>
 
-        <div id="task-number" style="text-align: center;" hidden="true">
+        <!-- Task Number Selection Page -->
+        <div id="task-number-page" style="text-align: center;" hidden="true">
             <h1>How many tasks do you have? (Maximum 10)</h1>
-            <div class="session-style">
-                <div class="session-option" id="task-opt">
-                    <img class="session-img" src="img/filler.jpg">
-                    <h2>Tasks</h2>
-                </div>
-                <div class="session-option" id="timer-opt">
-                    <img class="session-img" src="img/filler.jpg">
-                    <h2>Time</h2>
-                </div>
+            <div class="task-num-editor">
+                <button id="minus-task">-</button>
+                <span id="task-count">0</span>
+                <button id="plus-task">+</button>
             </div>
-            <button id="session-button">Select</button>
+            <button id="task-num-sub">Next</button>
         </div>
 
-        <script type="module" src="js/welcome.js"></script>
+        <!-- Timer Selection Page -->
+        <div id="edit-timer-page" style="text-align: center;" hidden="true">
+            <h1>How long would you like each session to be?</h1>
+            <button id="timer-sub">Next</button>
+        </div> 
+        <script src="js/welcome.js"></script>
         <script type="module" src="js/seed.js"></script>
-        <script type="module" src="js/session.js"></script>    </body>
+        <script type="module" src="js/session.js"></script>
+
+    </body>
 </html>

@@ -86,3 +86,11 @@ body {
   .session-option:hover {
     border-color: rgb(162, 232, 232);
   }
+
+  .task-num-editor span {
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }

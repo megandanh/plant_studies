@@ -1,27 +1,37 @@
-import { state } from './app‑state.js';
+import { state } from './app-state.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const sessionPage = document.getElementById('session-page');
-  const sessBtn     = document.getElementById('session-button');
+console.log('> session.js loaded – sessType is', state.sessType);
 
-  const taskOpt   = document.getElementById('task-opt');   // “Task List”
-  const timerOpt  = document.getElementById('timer-opt');  // “Timer”
 
-  // ----- click handlers for the two choices -------------------------------
-  taskOpt.addEventListener('click', () => {
-    state.sessType = 1;
-    taskOpt.style.borderColor = 'green';
-  });
+const sessionPage = document.getElementById('session-page');
+const sessBtn     = document.getElementById('session-button');
 
-  timerOpt.addEventListener('click', () => {
-    state.sessType = 2;
-    timerOpt.style.borderColor = 'green';
-  });
+const taskOpt   = document.getElementById('task-opt');   
+const timerOpt  = document.getElementById('timer-opt');  
 
-  // ----- Continue button ---------------------------------------------------
-  sessBtn.addEventListener('click', () => {
-    if (state.sessType < 0) return; // still no choice
-    sessionPage.hidden = true;
-    // (show the next page here when you build it)
-  });
+const taskPage = document.getElementById('task-number-page');
+const timerPage = document.getElementById('edit-timer-page');
+
+// ----- click handlers for the two choices -------------------------------
+taskOpt.addEventListener('click', () => {
+  state.sessType = 1;
+  taskOpt.style.borderColor = 'rgb(77, 251, 106)';
+  timerOpt.style.borderColor = 'rgb(105, 101, 101)';
+});
+
+timerOpt.addEventListener('click', () => {
+  state.sessType = 2;
+  timerOpt.style.borderColor = 'rgb(77, 251, 106)';
+  taskOpt.style.borderColor = 'rgb(105, 101, 101)';
+});
+
+// ----- Continue button ---------------------------------------------------
+sessBtn.addEventListener('click', () => {
+  if (state.sessType < 0) return; // still no choice
+  sessionPage.hidden = true;
+
+  if (state.sessType == 1) taskPage.hidden = false;
+
+  if (state.sessType == 2) timerPage.hidden = false;
+
 });
