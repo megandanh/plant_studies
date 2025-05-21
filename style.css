@@ -94,3 +94,16 @@ body {
     font-size: 1.5rem;
     margin: 0 1rem;
   }
+
+  .timer-num-editor span {
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+  .watering-img {
+    max-width: 50%;
+    height: auto;
+  }
+    
