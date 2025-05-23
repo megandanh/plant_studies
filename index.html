@@ -91,16 +91,33 @@
         <div id="plant-page" style="text-align: center;" hidden="true">
             <div id="water-plant" class="plant-care">
                 <h1>Water your plant</h1>
-                <img class="watering-img" src="img/watering-can.png">
+                <img class="watering-img" id="watering-ani" src="img/watering0.jpg">
             </div>
-            <div id="add sunlight" class="plant-care" hidden="true">
+            <div id="add-sunlight" class="plant-care" hidden="true">
                 <h1>Adding sunlight!</h1>
             </div>
+            <button id="go-study">Study!</button>
         </div> 
+
+        <!-- Timer Study Page -->
+         <div id="timer-study-page" style="text-align: center;" hidden="true">
+            <h1>Time to work!</h1>
+            <span id="study-timer-update"></span>
+            <h1>:</h1>
+            <span id="ones-seconds-display"></span>
+         </div>
+
+         <!-- Task Study Page-->
+        <div id="task-study-page" style="text-align: center;" hidden="true">
+            <h1>Time to work!</h1>
+            <h1>Press the button when you finish your task!</h1>
+            <button id="finished-task">Finished task!</button>
+        </div>
         <script src="js/welcome.js"></script>
         <script type="module" src="js/seed.js"></script>
         <script type="module" src="js/session.js"></script>
         <script type="module" src="js/task-editor.js"></script>
         <script type="module" src="js/timer-editor.js"></script>
+        <script type="module" src="js/plant-page.js"></script>
     </body>
 </html>

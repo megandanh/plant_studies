@@ -103,7 +103,10 @@ body {
     margin: 0 1rem;
   }
   .watering-img {
-    max-width: 50%;
-    height: auto;
+    width:200px;
+    height:auto;
+    border-radius: 20%;
+    margin: 0 40px;   
+    cursor: pointer;  
   }
     

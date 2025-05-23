@@ -4,7 +4,6 @@ const seedPage    = document.getElementById('seed-page');
 const seedBtn     = document.getElementById('seed-button');
 const sessionPage = document.getElementById('session-page');
 
-// --- plant cards ---------------------------------------------------------
 const plantCards = [
   document.getElementById('lemon-tree-opt'),      // 0
   document.getElementById('sunflower-opt'),       // 1
@@ -24,7 +23,6 @@ plantCards.forEach((card, index) => {
   });
 });
 
-// --- Select button -------------------------------------------------------
 seedBtn.addEventListener('click', () => {
   if (state.selectedPlant < 0) return; // nothing chosen yet
   seedPage.hidden    = true;
