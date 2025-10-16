@@ -1,12 +1,23 @@
-body {
+  @font-face {
+    font-family: 'Lateef';
+    src: url('fonts/Lateef-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
     margin: 0;
     padding: 2rem;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #A2D062;
   }
   
   h1 {
     margin-bottom: 1rem;
+    font-family: Lateef, Arial, sans-serif;
+    font-size: 70px;
+    color: #A2D062;
   }
   
   button {
@@ -16,11 +27,26 @@ body {
   }
   
   /* Page containers */
+  #welcome-page {
+    background-color: #FFEFAD;
+    padding: 5px;
+    border-radius: 100px;
+    width: 90%;
+  }
+
+  #seed-page,
+  #session-page {
+    background-color: #FFEFAD;
+    padding: 5px;
+    border-radius: 45px;
+    width: 90%;
+  }
+
   #welcome-page,
   #seed-page,
   #session-page {
+    margin: 0 auto;    
     max-width: 800px;
-    margin: 0 auto;
   }
   
   .plant-menu {
