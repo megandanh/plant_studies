@@ -9,7 +9,9 @@
     <body>
         <!-- Welcome Page -->
         <div id="welcome-page" style="text-align: center;">
-            <h1>Green Studies</h1>
+            <div id="welcome-title" style="text-align: center;"> 
+                <h1>Green Studies</h1>
+            </div>
             <button id="welcome-button">Study!</button>
         </div>
 
@@ -77,8 +79,8 @@
 
         <!-- Timer Selection Page -->
         <div id="edit-timer-page" style="text-align: center;" hidden="true">
-            <h1>How long would you like each session to be?</h1>
-            <div class="timer-num-editor">
+            <h1>How long would each session be?</h1>
+            <div class="timer-num-editor" style="text-align: center;">
                 <button id="minus-time">-</button>
                 <span id="timer-len">30</span>
                 <h2>minutes</h2>
@@ -102,9 +104,12 @@
         <!-- Timer Study Page -->
          <div id="timer-study-page" style="text-align: center;" hidden="true">
             <h1>Time to work!</h1>
-            <span id="study-timer-update"></span>
-            <h1>:</h1>
-            <span id="ones-seconds-display"></span>
+            <div class="timer-countdown">
+                <span id="study-timer-update"></span>
+                <h1>:</h1>
+                <span id="ones-seconds-display"></span>
+            </div>
+            
          </div>
 
          <!-- Task Study Page-->

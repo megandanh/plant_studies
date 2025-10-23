@@ -19,6 +19,13 @@
     font-size: 70px;
     color: #A2D062;
   }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-family: Lateef, Arial, sans-serif;
+    font-size: 50px;
+    color: #A2D062;
+  }
   
   button {
     padding: 0.5rem 1rem;
@@ -27,7 +34,7 @@
   }
   
   /* Page containers */
-  #welcome-page {
+  #welcome-title {
     background-color: #FFEFAD;
     padding: 5px;
     border-radius: 100px;
@@ -35,18 +42,27 @@
   }
 
   #seed-page,
-  #session-page {
+  #session-page,
+  #task-number-page,
+  #edit-timer-page,
+  #timer-study-page {
     background-color: #FFEFAD;
-    padding: 5px;
+    padding: 20px;
     border-radius: 45px;
     width: 90%;
+    text-align: center;
+
   }
 
   #welcome-page,
-  #seed-page,
-  #session-page {
+  #task-number-page,
+  #edit-timer-page {
     margin: 0 auto;    
     max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    border-radius: 45px;
   }
   
   .plant-menu {
@@ -135,4 +151,90 @@
     margin: 0 40px;   
     cursor: pointer;  
   }
-    
+
+  #welcome-button {
+    font-family: Lateef, Arial, sans-serif;
+    font-size: 55px;
+    padding: 1rem 2rem;
+    color: #A2D062;
+    background-color: #FFEFAD;
+    border: solid 6px;
+    border-radius: 60px;
+    margin-top: 80px;
+  }
+
+  #welcome-button:hover {
+    background-color: #a89f6a;
+  }
+
+  .timer-num-editor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    align-items: center;       
+    gap: 12px;                 
+    font-family: Lateef, Arial, sans-serif;
+    color: #A2D062;
+    text-align: center;       
+  }
+
+  .timer-num-editor h2 {
+    margin: 0;                
+    font-size: 30px;        
+    font-weight: 600;          
+  }
+
+  #timer-len {
+    font-size: 30px;         
+    font-weight: 700;      
+    margin-right: 0%;  
+  }
+
+  #plus-time, #minus-time {
+    font-size: 30px;         
+    font-weight: 700;
+    font-family: Lateef, Arial, sans-serif;      
+    width: 50px;             
+    height: 50px;            
+    border-radius: 50%; 
+    border: solid 6px;     
+    text-align: center;
+    border-color: #A2D062;    
+    background-color: #FFEFAD;        
+    color: #A2D062;          
+    cursor: pointer;         
+  }
+
+  #session-button, 
+  #seed-button, 
+  #task-num-sub,
+  #timer-num-sub,
+  #timer-sub,
+  #go-study {
+    font-family: Lateef, Arial, sans-serif;
+    font-size: 40px;
+    padding: 1rem 2rem;
+    color: #A2D062;
+    background-color: #FFEFAD;
+    border: solid 6px;
+    border-radius: 60px;
+    margin-top: 40px;
+  }
+
+  #study-timer-update {
+    font-size: 80px;         
+    font-weight: 700;      
+    margin-right: 0%; 
+  }
+
+  .timer-countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    align-items: center;       
+    gap: 12px;                 
+    font-family: Lateef, Arial, sans-serif;
+    color: #A2D062;
+    text-align: center;       
+  }
+      
