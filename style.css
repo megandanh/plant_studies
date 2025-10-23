@@ -210,7 +210,8 @@
   #task-num-sub,
   #timer-num-sub,
   #timer-sub,
-  #go-study {
+  #go-study,
+  #skip-session {
     font-family: Lateef, Arial, sans-serif;
     font-size: 40px;
     padding: 1rem 2rem;
@@ -221,7 +222,8 @@
     margin-top: 40px;
   }
 
-  #study-timer-update {
+  #study-minute-update,
+  #study-sec-update {
     font-size: 80px;         
     font-weight: 700;      
     margin-right: 0%; 

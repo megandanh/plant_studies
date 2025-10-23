@@ -3,5 +3,5 @@ export const state = {
     sessType      : -1,   // -1 = no session type chosen yet
     numTasks : 0,
     sessTimeLen: 30,
-    sessTimeLenSec: 0.00
+    sessTimeLenSec: "00"
   };

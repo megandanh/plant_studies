@@ -12,7 +12,6 @@ const timerOpt  = document.getElementById('timer-opt');
 const taskPage = document.getElementById('task-number-page');
 const timerPage = document.getElementById('edit-timer-page');
 
-// ----- click handlers for the two choices -------------------------------
 taskOpt.addEventListener('click', () => {
   state.sessType = 1;
   taskOpt.style.borderColor = 'rgb(77, 251, 106)';
@@ -25,7 +24,6 @@ timerOpt.addEventListener('click', () => {
   taskOpt.style.borderColor = 'rgb(105, 101, 101)';
 });
 
-// ----- Continue button ---------------------------------------------------
 sessBtn.addEventListener('click', () => {
   if (state.sessType < 0) return; // still no choice
   sessionPage.hidden = true;

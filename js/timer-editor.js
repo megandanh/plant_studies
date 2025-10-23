@@ -9,7 +9,7 @@ const nextBtn = document.getElementById('timer-sub');
 const timerPage = document.getElementById('edit-timer-page');
 const plantPage = document.getElementById('plant-page');
 
-const timerStartVal = document.getElementById("study-timer-update");
+const timerStartVal = document.getElementById("study-minute-update");
 
 sessionLength.innerText = state.sessTimeLen;
 timerStartVal.innerText = state.sessTimeLen;

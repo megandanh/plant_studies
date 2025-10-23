@@ -16,9 +16,7 @@ const plantCards = [
 plantCards.forEach((card, index) => {
   card.addEventListener('click', () => {
     state.selectedPlant = index;
-    // reset all:
     plantCards.forEach(c => c.style.borderColor = 'rgb(105, 101, 101)');
-    // highlight the clicked one:
     card.style.borderColor = 'rgb(77, 251, 106)';
   });
 });
